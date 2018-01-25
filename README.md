@@ -5,7 +5,43 @@ This project target is to train a model to detect Chinese traffic signs and sign
 Only 13 classes Chinese traffic signs and signals have been trained to detect in this project for limited dataset reason.
 ![](images/trafficsigns.png)
 
+The model is ssd inception model and trained about 30000.
+
+It is clear that Chinese traffic detection can not meet requirements with limited dataset and transfer learning.
+
+More methods will be carried to improve traffic signs detections for self driving cars. 
+
 ## Performance
+### Evaluation metrics
+The commonly used mAP metric for evaluating the quality of object detectors, computed according to the protocol of the PASCAL VOC Challenge 2007. The protocol is available [here](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/devkit_doc_07-Jun-2007.pdf).
+
+A [reference](http://www.cnblogs.com/sddai/p/5696870.html) for metrics concept.
+
+`metrics_set='pascal_voc_metrics'`
+should be added into config file `eval_config`.
+
+### mPA for total and separate class
+* mAP for total
+
+![](images/mAP_all.png)
+* mAP for speed limit 60
+
+![](images/mAP_speedlimit60.png)
+* mAP for no left turn
+
+![](images/mAP_noleftturn.png)
+* mAP for red light
+
+![](images/mAP_red.png)
+### example Images
+* detect right  
+![](images/keepright.png)
+* detect empty images
+![](images/empty.png)
+* detect wrong
+![](images/noleftturn.png)
+* missing detect
+![](images/speedlimit60.png)
 
 ## Data
 There are several data sources for Chinese traffic signs and signals:
@@ -69,6 +105,8 @@ We ignore these classes which classes numbers less than 60 and stratifiedshuffle
 [A Real-Time Chinese Traffic Sign Detection Algorithm Based on Modified YOLOv2](http://www.mdpi.com/1999-4893/10/4/127/htm)
 
 [Traffic-Sign Detection and Classification in the Wild](http://cg.cs.tsinghua.edu.cn/traffic-sign/)
+
+[matlab traffic signs paper](https://cn.mathworks.com/content/dam/mathworks/mathworks-dot-com/company/events/conferences/automotive-conference-stuttgart/2015/proceedings/traffic-sign-recognition-for-driver-assistance-systems.pdf)
 
 ## Licenses
 The specific code is distributed under MIT License.

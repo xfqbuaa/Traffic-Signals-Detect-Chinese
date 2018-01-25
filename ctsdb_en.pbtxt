@@ -1,0 +1,64 @@
+item { 
+  id: 1
+  name: 'pedestrian crossing'
+}
+
+item { 
+  id: 2
+  name: 'no lorries'
+}
+
+item { 
+  id: 3
+  name: 'no left turn'
+}
+
+item { 
+  id: 4
+  name: 'no U-turn'
+}
+
+item { 
+  id: 5
+  name: 'no parking'
+}
+
+item { 
+  id: 6
+  name: 'no honk horn'
+}
+
+item { 
+  id: 7
+  name: 'maximum height limit'
+}
+
+item { 
+  id: 8
+  name: 'maximum speed limit (60 km/h)'
+}
+
+item { 
+  id: 9
+  name: 'keep right'
+}
+
+item { 
+  id: 10
+  name: 'motor vehicles only'
+}
+
+item { 
+  id: 11
+  name: 'green straight ahead arrow'
+}
+
+item { 
+  id: 12
+  name: 'red'
+}
+
+item { 
+  id: 13
+  name: 'green'
+}
